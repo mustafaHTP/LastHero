@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Climb
+  - Background
+  - Player
+  - Bounce
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1697703733
+    locked: 0
+  - name: Stone
+    uniqueID: 2974873717
+    locked: 0
+  - name: Vegatation
+    uniqueID: 3020130973
+    locked: 0
+  - name: Platform
+    uniqueID: 3937146607
+    locked: 0
+  - name: Player
+    uniqueID: 29400027
     locked: 0
