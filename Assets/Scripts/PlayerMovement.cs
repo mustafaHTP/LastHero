@@ -15,15 +15,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float gravityScale;
 
     [SerializeField] private BoxCollider2D feetCollider;
+    private BoxCollider2D _bodyCollider;
 
     private Rigidbody2D _rigidbody;
     private Animator _animator;
-    private BoxCollider2D _bodyCollider;
     private Vector2 _defaultLocalScale;
 
     //Inputs
     private float _moveInput;
     private float _climbInput;
+
+    //States
+    private bool _isGrounded;
 
     private void Awake()
     {
@@ -35,13 +38,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //Check hero is grounded for animator
+        if (IsGrounded())
+        {
+            _animator.SetBool("isGrounded", true);
+        }
+        else
+        {
+            _animator.SetBool("isGrounded", false);
+        }
+
+        //Set velocity for animator
+        _animator.SetFloat("verticalVelocity", _rigidbody.velocity.y);
+        
         Move();
         Climb();
     }
 
     private void Move()
     {
-        FlipSprite();
+        FlipPlayer();
         SetMoveAnimation();
 
         //Move
@@ -51,11 +67,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetMoveAnimation()
     {
-        bool hasHorizontalSpeed = Mathf.Abs(_rigidbody.velocity.x) > Mathf.Epsilon;
-        _animator.SetBool("isRunning", hasHorizontalSpeed);
+        bool hasMoveInput = Mathf.Abs(_moveInput) > Mathf.Epsilon;
+        _animator.SetBool("isRunning", hasMoveInput);
     }
 
-    private void FlipSprite()
+    private void FlipPlayer()
     {
         if (_moveInput > 0f)
         {
@@ -73,9 +89,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        int groundLayerMask = LayerMask.GetMask("Ground");
-        if (feetCollider.IsTouchingLayers(groundLayerMask))
+        if (IsGrounded())
         {
+            _animator.SetTrigger("jump");
             _rigidbody.velocity = new Vector2(0f, jumpSpeed);
         }
     }
@@ -93,6 +109,21 @@ public class PlayerMovement : MonoBehaviour
         {
             _rigidbody.gravityScale = gravityScale;
         }
+    }
+
+    private bool IsGrounded()
+    {
+        int groundLayerMask = LayerMask.GetMask("Ground");
+        if (feetCollider.IsTouchingLayers(groundLayerMask))
+        {
+            _isGrounded = true;
+        }
+        else
+        {
+            _isGrounded = false;
+        }
+
+        return _isGrounded;
     }
 
     private void OnMove(InputValue inputValue)
