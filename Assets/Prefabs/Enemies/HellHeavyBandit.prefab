@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7052465924837358940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4462162168268010073, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 317b8365a4649ab459f6cb58ec8f9f18, type: 3}
+    - target: {fileID: 4462162168268010073, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462162168268010073, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.12347082
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573890518663156717, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: eb050b374996d3949937e8b1b46d4a5f, type: 2}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446008274012496117, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732636237395776241, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
+      propertyPath: m_Name
+      value: HellHeavyBandit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce133d12369f73a43a9de87c03da399f, type: 3}
