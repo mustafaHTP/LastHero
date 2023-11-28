@@ -39,7 +39,6 @@ public class OnLevelExit : MonoBehaviour
 
         yield return new WaitForSeconds(sceneLoadingDelay);
 
-
         SceneManager.LoadScene(nextLevelIndex);
         
     }

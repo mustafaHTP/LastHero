@@ -1103,6 +1103,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1410717672355006307, guid: e5d3383cead36184db3306934e5f1c44, type: 3}
+      propertyPath: damageKickForce
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 2161946620979754337, guid: e5d3383cead36184db3306934e5f1c44, type: 3}
       propertyPath: m_Name
       value: LastHero

@@ -16,14 +16,8 @@ public class PlayerCollision : MonoBehaviour
     {
         if (IsCollideWithHazard() && !_playerHealth.IsDead)
         {
-            Die();
+            _playerHealth.Die();
         }
-    }
-
-    private void Die()
-    {
-        int currentHealth = _playerHealth.CurrentHitPoint;
-        _playerHealth.TakeDamage(currentHealth);
     }
 
     private bool IsCollideWithHazard()

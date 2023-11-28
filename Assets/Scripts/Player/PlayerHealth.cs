@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,9 @@ public class PlayerHealth : MonoBehaviour, IDamagable
     [SerializeField]
     [Min(0)]
     private int maxHitPoint;
+
+    [SerializeField]
+    private float damageKickForce;
 
     private int currentHitPoint;
     private const int MinHitPoint = 0;
@@ -51,11 +55,11 @@ public class PlayerHealth : MonoBehaviour, IDamagable
 
         if (_isDead)
         {
-            ProcessDeath();
+            Die();
         }
     }
 
-    private void ProcessDeath()
+    public void Die()
     {
         _playerMovement.enabled = false;
         _playerInput.enabled = false;
@@ -63,10 +67,13 @@ public class PlayerHealth : MonoBehaviour, IDamagable
         _rigidbody.simulated = false;
         _rigidbody.bodyType = RigidbodyType2D.Static;
 
-        //GameManager.Instance.ResetGameSession();
-        //GameManager.Instance.LoadInitialLevel();
-        _animator.SetTrigger("die");
+        if(currentHitPoint > 0)
+        {
+            currentHitPoint = 0;
+        }
 
+        _animator.SetTrigger("die");
+        
         GameManager.Instance.DisplayGameOverCanvas();
     }
 
@@ -82,5 +89,7 @@ public class PlayerHealth : MonoBehaviour, IDamagable
         playerSessionInfo.Health = currentHitPoint;
 
         _animator.SetTrigger("takeDamage");
+
+        _rigidbody.AddForce(new Vector2(damageKickForce, 0));
     }
 }
