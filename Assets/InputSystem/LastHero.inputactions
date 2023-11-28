@@ -55,6 +55,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "68fcbb8a-6529-4fdb-9623-fa489173ac02",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "96510177-dbcf-42be-8856-50ee311846e0",
                     "path": "1DAxis",
@@ -80,6 +91,39 @@
                     "name": "positive",
                     "id": "aae4fa58-1bb8-49fb-a931-58be0051e85a",
                     "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "5ca8e4f0-20e2-4fe7-9378-9d0c3ab1bb23",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "5f469ee4-eacf-4e90-93b7-c727176e033d",
+                    "path": "<XInputController>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "9e0bde12-3e7b-455f-9477-1f8b07f893f2",
+                    "path": "<XInputController>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -121,6 +165,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D Axis",
+                    "id": "26c7e2a6-89ad-4f7e-a86b-3a13d661f456",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "148f009e-439c-4c3f-a0e7-b39ffd66b0b9",
+                    "path": "<XInputController>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "4c70c38d-c138-4792-9e33-75cf11510783",
+                    "path": "<XInputController>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Climb",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "d7a335db-31e7-4a3b-9932-e5c2e658c4c8",
                     "path": "<Mouse>/leftButton",
@@ -135,6 +212,17 @@
                     "name": "",
                     "id": "a3fb6be4-b3d6-4a02-b8c5-6b7ab359ba51",
                     "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "612e53d4-7b3b-4cc4-8de3-07440aa845ea",
+                    "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
