@@ -23,7 +23,9 @@ For Windows, check [releases](https://github.com/mustafaHTP/LastHero/releases)
 ## Controls
 
 Move player → (Up, Left, Right, Down Arrows), Xbox Controller Left Stick
+
 Jump → Xbox Controller - A
+
 Attack → Xbox Controller - B
 
 ## Screenshots
