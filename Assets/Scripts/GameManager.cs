@@ -37,15 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void DisplayGameOverCanvas()
     {
-        float gameOverCanvasPopupDuration = GetGameOverCanvasDuration();
-        StartCoroutine(ProcessGameOverCanvas(10));
-    }
-
-    private IEnumerator ProcessGameOverCanvas(float popupTime)
-    {
         gameOverCanvas.gameObject.SetActive(true);
-        yield return new WaitForSeconds(popupTime);
-        Time.timeScale = 0;
     }
 
     public void ResetGameSession()
@@ -57,7 +49,6 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         gameOverCanvas.gameObject.SetActive(false);
-        Time.timeScale = 1;
         ResetGameSession();
         StartCoroutine(LoadFirstScene());
     }
@@ -66,23 +57,5 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(sceneLoadDelay);
         SceneManager.LoadScene(0);
-    }
-
-    private float GetGameOverCanvasDuration()
-    {
-        Animator gameOverCanvasAnimator = gameOverCanvas.GetComponent<Animator>();
-        AnimationClip[] clips = gameOverCanvasAnimator.runtimeAnimatorController.animationClips;
-
-        float animationLength = 0f;
-        foreach (AnimationClip clip in clips)
-        {
-            if (clip.name.Equals("GameOver"))
-            {
-                animationLength = clip.length;
-                break;
-            }
-        }
-
-        return animationLength;
     }
 }

@@ -1111,6 +1111,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LastHero
       objectReference: {fileID: 0}
+    - target: {fileID: 2585177059554256527, guid: e5d3383cead36184db3306934e5f1c44, type: 3}
+      propertyPath: jumpSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585177059554256527, guid: e5d3383cead36184db3306934e5f1c44, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6399094069998039930, guid: e5d3383cead36184db3306934e5f1c44, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.43
