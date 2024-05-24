@@ -12,6 +12,14 @@ Game project that was made in GameDevTV 2D Course. The followings are things tha
 * Tilemap & Tile Palette & Rule Tile
 * New input system
 
+## Assets
+
+- Portal --> https://xzany.itch.io/2d-isometric-portal
+- Coin --> https://assetstore.unity.com/packages/2d/environments/2d-animated-coin-2d-rpk-22009
+- Decorations --> https://szadiart.itch.io/pixel-platformer-castle
+- Dungeon --> https://genewheel.itch.io/16x16-dungeon-tileset
+- Hell --> https://ansimuz.itch.io/gothicvania-junk-wasteland-environment
+
 ## Theme
 
 The devil came with his armies and killed all the heroes who opposed him, except you! The fate of humanity is in the hands of the last hero.
